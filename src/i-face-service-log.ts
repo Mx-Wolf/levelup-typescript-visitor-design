@@ -13,7 +13,9 @@ export interface ServiceLogRecord {
   id: string;
   //* дата события
   serviced: DateTime;
-  //* сервисный центр
+  /**
+   * сервисный центр
+  */
   workshop: string;
   //* марка автомобиля
   vehicle: Vehicle
@@ -23,8 +25,10 @@ export interface ServiceLogRecord {
   milage: number
   //* вид обслуживания
   description: string;
-  //* стоимость для клиента
-  total: number;
+  /**
+   * стоимость для клиента
+   **/
+  total: Amount;
   //* стоимость деталей
   parts: Amount;
   //* стоимость работы
