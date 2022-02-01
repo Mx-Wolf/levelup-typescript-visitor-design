@@ -37,7 +37,9 @@ export interface ServiceLogRecord {
   customer: string
   //* механик (исполнитель)
   mechanic: string;
-  //* оплаченная сумма
+  /**
+   *  оплаченная сумма
+  */
   paid: Amount;
   //* скидка
   discount: Amount;

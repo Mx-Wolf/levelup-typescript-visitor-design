@@ -29,3 +29,11 @@ export const simpleLog:ServiceLogRecord[] = [
     year: new Date().getFullYear()-1,
   }
 ];
+
+export const doubleLog:ServiceLogRecord[] = [
+  simpleLog[0],
+  {
+    ...simpleLog[0],
+    total:makeAmount(2),
+  }
+];
